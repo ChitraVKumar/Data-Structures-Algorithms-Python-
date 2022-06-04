@@ -11,9 +11,11 @@ def arraypairsum(arr, k):
 
         if target not in seen:
             seen.add(num)
+            print(seen)
 
         else:
             output.add( ( (min(num, target)), (max(num, target)) ) )
+            print(output)
 
     print(len(output))
     return '\n'.join(map(str, list(output)))
